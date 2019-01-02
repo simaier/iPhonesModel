@@ -22,14 +22,14 @@ public enum iphonesModel {
 }
 
 //    MARK: - 通过屏幕逻辑分辨机型
-protocol iPhoneModelS{
+public protocol iPhoneModelS{
     
-     static func iPhone() -> iphonesModel
+    func iPhone() -> iphonesModel
 }
 
 extension iPhoneModelS
 {
-    public static func iPhone() -> iphonesModel
+    func iPhone() -> iphonesModel
     {
         let rect = UIScreen.main.bounds
         let width = rect.size.width

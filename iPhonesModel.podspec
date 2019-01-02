@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "iPhonesModel"
-s.version      = "1.0.6"
+s.version      = "1.0.7"
 s.summary      = "Through the way of protocol to judge the model."
 s.homepage     = "https://github.com/simaier/iPhonesModel"
 s.license      = "MIT"
