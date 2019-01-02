@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum iphonesModel {
+public enum iphonesModel {
     case iPhone4       //320*480
     case iPhone5       //320*568
     case iPhone6       //375*667 ->iPhone6,iPhone7,iPhone8
@@ -24,12 +24,12 @@ enum iphonesModel {
 //    MARK: - 通过屏幕逻辑分辨机型
 protocol iPhoneModelS{
     
-    func iPhone() -> iphonesModel
+    static func iPhone() -> iphonesModel
 }
 
 extension iPhoneModelS
 {
-    func iPhone() -> iphonesModel
+    public static func iPhone() -> iphonesModel
     {
         let rect = UIScreen.main.bounds
         let width = rect.size.width
