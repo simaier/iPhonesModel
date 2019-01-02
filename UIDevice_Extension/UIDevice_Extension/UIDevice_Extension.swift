@@ -24,10 +24,10 @@ public enum iphonesModel {
 //    MARK: - 通过屏幕逻辑分辨机型
 public protocol iPhoneModelS{
     
-     func iPhone() -> iphonesModel
+    func iPhone() -> iphonesModel
 }
 
-extension iPhoneModelS
+public extension iPhoneModelS
 {
      func iPhone() -> iphonesModel
     {
